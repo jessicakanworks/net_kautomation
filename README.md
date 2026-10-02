@@ -60,7 +60,7 @@ Example:
 
 ```text
 ==================================================================
-INTERFACE TREE — REMERA-PE-TEST
+INTERFACE TREE — RMR-PE-TEST
 ==================================================================
 ge-0/0/0                   10GBASE-X-SFPP
   ge-0/0/0.100             Virtual
@@ -104,7 +104,7 @@ NETBOX_URL = "https://netbox.example.com"
 NETBOX_TOKEN = "YOUR_NETBOX_API_TOKEN"
 NETBOX_VERIFY_SSL = True
 
-DEVICE_NAME = "REMERA-PE-TEST"
+DEVICE_NAME = "RMR-PE-TEST"
 ```
 
 Update the values before running the script.
@@ -168,7 +168,7 @@ Specify the NetBox device to audit.
 Example:
 
 ```python
-DEVICE_NAME = "REMERA-PE-TEST"
+DEVICE_NAME = "RMR-PE-TEST"
 ```
 
 The device must already exist in NetBox.
@@ -393,13 +393,13 @@ The script terminates with an error if:
 For example:
 
 ```text
-Device 'REMERA-PE-TEST' not found in NetBox.
+Device RMR-PE-TEST' not found in NetBox.
 ```
 
 or:
 
 ```text
-No interfaces found on REMERA-PE-TEST.
+No interfaces found on RMR-PE-TEST.
 ```
 
 The script can also be stopped with `Ctrl+C`.
@@ -450,7 +450,7 @@ A future command-line format could look like:
 
 ```bash
 python netbox_iface_tree.py \
-    --device REMERA-PE-TEST \
+    --device RMR-PE-TEST \
     --fix-parents
 ```
 
